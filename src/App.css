@@ -1,0 +1,68 @@
+.container {
+  margin: 20px auto;
+  max-width: 800px;
+}
+input {
+  width: 100px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="date"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input[type="date"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.empty {
+  border-color: red;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #640606;
+  color: #ffffff;
+}
+
+tr:nth-child(odd) {
+  background-color: #ef8d8d;
+  color: #040404;
+}
+
+@media (max-width: 767px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    min-width: 150px;
+  }
+}
